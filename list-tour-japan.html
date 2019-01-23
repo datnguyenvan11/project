@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline|Pinyon+Script|Sniglet" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-size: 1em;
+            outline: none;
+        }
+
+        body {
+
+        }
+
+        header {
+            height: 300px;
+            position: relative;
+        }
+
+        .logo {
+            width: 450px;
+
+            position: absolute;
+            left: 33%;
+            top: 25%;
+            display: inline-block;
+            text-align: center;
+            height: 170px;
+            background-color: rgba(243, 243, 243, 0.35);
+        }
+
+        ul li {
+            display: inline-table;
+            width: 145px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            font-size: 13px;
+
+        }
+
+        ul li:hover {
+            border-bottom: 1px solid white;
+        }
+
+        .menu {
+            background: 0, 0, 0, 0;
+            width: 100%;
+            z-index: 10;
+            padding: 15px 10px;
+            position: fixed;
+            background-image: linear-gradient(to right, #292929, rgba(38, 43, 52, 0.05));
+        }
+
+        .con {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.47);
+            z-index: 1;
+            color: white;
+
+        }
+
+        ul li:hover .con {
+            display: block;
+            color: black;
+
+        }
+
+        a {
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 15px;
+        }
+
+        ul li a:hover {
+            color: orange;
+            text-decoration: none;
+        }
+
+        span {
+
+            /*margin-right: 0px;*/
+            /*font-family: Tahoma;*/
+            /*font-size: 20px;*/
+            /*height: 40px;*/
+            /*line-height: 39px;*/
+            /*width: 120px;*/
+
+        }
+
+        .boxmenu {
+        }
+
+        ul {
+            margin-bottom: 0;
+        }
+
+        .col1 {
+
+            height: 400px;
+
+        }
+
+        .detaild {
+            position: relative;
+        }
+
+        .mo {
+            position: absolute;
+            z-index: 2;
+            font-size: 15px;
+            color: white;
+            width: 92%;
+            height: 105px;
+            top: 74%;
+            background-color: rgba(0, 0, 0, 0.47);
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .khung {
+            position: absolute;
+            width: 85%;
+            border: 1px solid white;
+            height: 95%;
+            bottom: 6px;
+            left: 27px;
+        }
+
+        .p1 {
+            font-size: 70px;
+            font-family: 'Kumar One Outline', cursive;
+            margin-bottom: 0;
+        }
+
+        .p2 {
+            font-size: 30px;
+            font-family: 'Pinyon Script', cursive;
+        }
+
+        nav {
+            z-index: 11;
+        }
+
+        .row1 {
+            /*margin-top: 80px;*/
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .con1 {
+            float: right;
+        }
+
+        .diemden {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            border-bottom-style: dotted;
+            font-size: 17px;
+        }
+
+        .time {
+            margin-top: 4px;
+            text-align: left;
+            margin-left: 2px;
+            margin-right: 2px;
+
+        }
+
+        .unprice {
+            text-decoration-line: line-through;
+            font-size: 16px;
+            margin-bottom: 2px;
+            float: left;
+        }
+
+        .price {
+            font-size: 16px;
+            color: red;
+            margin-left: 7px;
+
+        }
+
+        .cho {
+            float: right;
+        }
+
+        button {
+            width: 90px;
+            height: 30px;
+            background: orange;
+            float: right;
+            margin-right: 5px;
+            margin-bottom: 3px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/list-tour-japan.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="row">
+            <div class="col-12 boxmenu">
+                <div class="menu" id="menu">
+                    <ul>
+                        <li><a href="#"> <i class="fas fa-home"></i>Trang chủ</a>
+
+
+                        </li>
+                        <li><a href="#">Tour trong nước <i class="fa fa-angle-down" aria-hidden="true"></i> </a>
+                            <ul class="con">
+                                <li><a href="#"> Quảng Ninh </a></li>
+                                <li><a href="#"> Phú Quốc</a></li>
+                                <li><a href="#"> Đà Nẵng </a></li>
+                                <li><a href="#"> TP.Hồ Chí Minh </a></li>
+                                <li><a href="#"> Huế </a></li>
+                                <li><a href="#"> Đà Lạt </a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#"> Tour nước ngoài <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="con">
+                                <li><a href="list-tour-japan.html"> Nhật Bản </a></li>
+                                <li><a href="list-tour-korea.html"> Hàn Quốc </a></li>
+                                <li><a href="list-tour-singapore.html"> Singapore</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Chọn Tour <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="con">
+                                <li><a href="#"> Cao cấp </a></li>
+                                <li><a href="#"> Giá tốt </a></li>
+                                <li><a href="#"> Tiết kiệm </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Liên hệ </a></li>
+
+                        <ul class="con1">
+
+                            <li>
+                                <form class="form-inline md-form form-sm active-blue-2 mt-2">
+                                    <input class="form-control form-control-sm mr-3 w-75" type="text"
+                                           placeholder="Search"
+                                           aria-label="Search" width="">
+                                    <i class="fas fa-search" aria-hidden="true" style="color: white"></i>
+                                </form>
+                            </li>
+                            <li><a href="#">Đăng nhập </a></li>
+                            <li><a href="#">Đăng kí </a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="logo">
+        <p class="p1"> ViVu.Com</p>
+        <p class="p2">Going very far to return</p>
+    </div>
+    <div><img height="300px" width="100%" src="http://www.tuyengiao.vn/Uploads/2017/1/25/2dulich.jpg" alt=""></div>
+
+
+</header>
+
+<div class="container-fluid pl-5 pr-5" style="background: #e4e4e4;min-height: 100vh">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="list-tour mt-4 bg-white p-3">
+                <div class="tour m-3">
+                    <div class="row p-2">
+                        <div class="col-lg-3">
+                            <img class="img-tour" src="http://dulichnamachau.com/wp-content/uploads/nagoya.jpg"
+                                 alt="tour">
+                        </div>
+
+                        <div class="col-lg-9">
+                            <div class="name-tour">
+                                <a href="#">
+                                    Nhật Bản - Núi Phú Sĩ - Kobe - Hokaido - Giờ vàng đón tết (Tour tiết kiệm)
+                                </a>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-5">
+                                    <i class="fa fa-barcode" aria-hidden="true"></i> NNSGN304-040-290119VJ-V-O
+                                </div>
+                                <div class="col-lg-5">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i> Khởi hành: 29/01/2019 09:00
+                                </div>
+                                <div class="col-lg-2 text-danger">
+                                    14,490,000đ
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-lg-5">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> Số ngày: 7
+                                </div>
+                                <div class="col-lg-5">
+                                    <i class="fa fa-user" aria-hidden="true"></i> Số chỗ còn nhận: 8
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-danger btn-sm">
+                                        Chi tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour m-3">
+                    <div class="row p-2">
+                        <div class="col-lg-3">
+                            <img class="img-tour" src="https://cattour.vn/images/upload/images/du-lich-nhat-ban/thap-cang-kobe.png"
+                                 alt="tour">
+                        </div>
+
+                        <div class="col-lg-9">
+                            <div class="name-tour">
+                                <a href="#">
+                                    Chiêm ngưỡng vãn cảnh tháp Kobe
+                                </a>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-5">
+                                    <i class="fa fa-barcode" aria-hidden="true"></i> NNSGN304-040-290119VJ-V-O
+                                </div>
+                                <div class="col-lg-5">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i> Khởi hành: 1/01/2019 07:00
+                                </div>
+                                <div class="col-lg-2 text-danger">
+                                    9,490,000đ
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-lg-5">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> Số ngày: 10
+                                </div>
+                                <div class="col-lg-5">
+                                    <i class="fa fa-user" aria-hidden="true"></i> Số chỗ còn nhận: 20
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-danger btn-sm">
+                                        Chi tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour m-3">
+                    <div class="row p-2">
+                        <div class="col-lg-3">
+                            <img class="img-tour" src="https://cattour.vn/images/upload/images/du-lich-nhat-ban/4.png"
+                                 alt="tour">
+                        </div>
+
+                        <div class="col-lg-9">
+                            <div class="name-tour">
+                                <a href="#">
+                                    Chiêm ngưỡng núi phú sĩ
+                                </a>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-5">
+                                    <i class="fa fa-barcode" aria-hidden="true"></i> NNSGN304-040-290119VJ-V-O
+                                </div>
+                                <div class="col-lg-5">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i> Khởi hành: 3/02/2019 09:00
+                                </div>
+                                <div class="col-lg-2 text-danger">
+                                    18,490,000đ
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-lg-5">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> Số ngày: 13
+                                </div>
+                                <div class="col-lg-5">
+                                    <i class="fa fa-user" aria-hidden="true"></i> Số chỗ còn nhận: 23
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-danger btn-sm">
+                                        Chi tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tour m-3">
+                    <div class="row p-2">
+                        <div class="col-lg-3">
+                            <img class="img-tour" src="https://cattour.vn/images/upload/images/du-lich-nhat-ban/13.png"
+                                 alt="tour">
+                        </div>
+
+                        <div class="col-lg-9">
+                            <div class="name-tour">
+                                <a href="#">
+                                    Vãn cảnh Chùa Vàng Kinkakuji
+                                </a>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-lg-5">
+                                    <i class="fa fa-barcode" aria-hidden="true"></i> NNSGN304-040-290119VJ-V-O
+                                </div>
+                                <div class="col-lg-5">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i> Khởi hành: 30/01/2019 09:00
+                                </div>
+                                <div class="col-lg-2 text-danger">
+                                    20,490,000đ
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-lg-5">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> Số ngày: 8
+                                </div>
+                                <div class="col-lg-5">
+                                    <i class="fa fa-user" aria-hidden="true"></i> Số chỗ còn nhận: 9
+                                </div>
+                                <div class="col-lg-2">
+                                    <button type="button" class="btn btn-danger btn-sm">
+                                        Chi tiết
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+
+</body>
+</html>
