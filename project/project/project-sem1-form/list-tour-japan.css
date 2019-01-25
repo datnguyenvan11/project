@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&subset=vietnamese');
+
+*{
+    font-family: 'Montserrat', sans-serif ;
+}
+
+.tour{
+    border: 1px solid #ececec;
+    transition: .3s;
+    position: relative;
+}
+
+.tour:hover{
+    box-shadow: 1px 0px 10px #d5d5d5;
+}
+
+.img-tour{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.name-tour a{
+    font-size: 20px;
+    transition: .3s;
+    color: #292929;
+}
+
+.name-tour a:hover{
+    text-decoration: none;
+    color: #e52169;
+}
+.slv-text-13{
+    font-size: 13px;
+}
